@@ -12,6 +12,7 @@
 - [RNA expression in Base J and 5hmU peaks](#rna-expression-in-base-j-and-5hmu-peaks)
     - [Profiles of expression](#profiles-of-expression)
 - [Motif analysis](#motif-analysis)
+- [Peak files](#peak-files)
 
 <!-- /MarkdownTOC -->
 
@@ -451,3 +452,31 @@ do
 done
 ls *.dreme.tmp.sh | xargs -P 0 -n 1 bash 
 ```
+
+# Peak files
+
+Summary table of peak files
+
+| filename | species | pull-down | method | input | n_peaks
+| ---------- | --------- | ----------- | -------- | ------- | --------
+| fk066_Ldono_chem1.oxNPD | L. donovani | 5hmU | Chem | fk070_Ldono_oxNPD.ldon.bam | 132
+| fk067_Ldono_chem2.oxNPD | L. donovani | 5hmU | Chem | fk070_Ldono_oxNPD.ldon.bam | 126
+| fk068_Ldono_fU1.oxNPD | L. donovani | control | Chem | fk070_Ldono_oxNPD.ldon.bam | 1
+| fk069_Ldono_fU2.oxNPD | L. donovani | control | Chem | fk070_Ldono_oxNPD.ldon.bam | 1
+| fk047_LdonDIP1.oxNPD | L. donovani | 5hmU | DIP | fk070_Ldono_oxNPD.ldon.bam | 2087
+| fk048_LdonDIP2.oxNPD | L. donovani | 5hmU | DIP | fk070_Ldono_oxNPD.ldon.bam | 2609
+| fk050_oxhyd1.oxNPD | L. major | 5hmU | Chem | fk059_ox_NPD_spiked.bam | 206
+| fk051_oxhyd4.oxNPD | L. major | 5hmU | Chem | fk059_ox_NPD_spiked.bam | 188
+| fk054_Chem5.oxNPD | L. major | 5hmU | Chem | fk059_ox_NPD_spiked.bam | 145
+| fk113_B2_J-BEADS.160218.lmaj | L. major | base | J | Chem | fk108_Leish_batch3_NPD.160115.lmaj.bam | 188
+| fk116_B3_J_BEADS.160218.lmaj | L. major | base | J | Chem | fk108_Leish_batch3_NPD.160115.lmaj.bam | 198
+| fk117_B3_J_BEADS_2.160218.lmaj | L. major | base | J | Chem | fk108_Leish_batch3_NPD.160115.lmaj.bam | 191
+| fk045_hyd1.oxNPD | L. major | control | Chem | fk059_ox_NPD_spiked.bam | 6
+| fk046_hyd2.oxNPD | L. major | control | Chem | fk059_ox_NPD_spiked.bam | 5
+| fk056_fu3.oxNPD | L. major | control | Chem | fk059_ox_NPD_spiked.bam | 5
+| fk057_fu4.oxNPD | L. major | control | Chem | fk059_ox_NPD_spiked.bam | 5
+| fk041_F5_10_DIP1.oxNPD | L. major | 5hmU | DIP | fk059_ox_NPD_spiked.bam | 1175
+| fk043_F5_18_DIP2.oxNPD | L. major | 5hmU | DIP | fk059_ox_NPD_spiked.bam | 237
+| fk052_DIP4.oxNPD | L. major | 5hmU | DIP | fk059_ox_NPD_spiked.bam | 47
+| fk059_ox_NPD_spiked | L. major | input | na | fk058_NPD_spiked.clean.bam | 3
+
