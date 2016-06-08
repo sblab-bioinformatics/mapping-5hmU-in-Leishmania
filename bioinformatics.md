@@ -353,6 +353,24 @@ gg<- ggplot(data= mod, aes(x= factor(mod, levels= c('Base J and 5hmU', 'Base J o
     geom_jitter(colour= 'red', alpha= 0.2, width= 0.1) + 
     xlab('') + ylab('log10(RPKM)') + ggtitle('RNA expression in modification peaks\n(shaded: mean background expr. +/- 1 sd)')
 ggsave('viol_rna_mods.prt.pdf', w= 12/2.54, h= 12/2.54)
+
+
+## Significance of difference between groups
+
+dat<- rbind(mod[, list(mod, rpkm)], rnd[, list(mod= 'Background', rpkm)])
+xlm<- aov(rpkm ~ mod, data= dat)
+hsd<- TukeyHSD(xlm)
+
+#                             diff        lwr        upr    p adj
+# Background-5hmU       -0.1398003 -0.3223368  0.0427361 0.200277
+# baseJ-5hmU            -0.4846197 -0.6816427 -0.2875968 0.000000
+# baseJ_5hmU-5hmU       -0.9692186 -1.1840549 -0.7543823 0.000000
+# baseJ-Background      -0.3448194 -0.4211308 -0.2685080 0.000000
+# baseJ_5hmU-Background -0.8294183 -0.9441355 -0.7147010 0.000000
+# baseJ_5hmU-baseJ      -0.4845989 -0.6211951 -0.3480026 0.000000
+
+par(las= 1, mar= c(3, 15, 2, 1), mgp= c(2, 0.5, 0))
+plot(hsd)
 ```
 
 ## Profiles of expression
