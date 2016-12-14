@@ -13,7 +13,7 @@ the  choice of peak caller. Consequently, downstream analyses and interpretation
 may be dependant on the peak calling algorithm. Here, we compare our
 peak caller of choice, MACS2, with an alternative peak calling program, SICER
 (version 1.1, [PMID: 19505939](https://www.ncbi.nlm.nih.gov/pubmed/19505939)).
-MACS2 ans SICER rely on substantially differ peak algorithms since SICER, in
+MACS2 and SICER rely on substantially differ peak algorithms since SICER, in
 contrast to MACS2, is designed for detecting broad and diffused peaks. 
 
 We compare MACS2 and SICER in terms of peak number and peak size in the
