@@ -89,7 +89,7 @@ ggsave('macs_vs_sicer_peak_size.png', width= 10, height= 10, units= 'cm')
 
 Th peak size is largely similar between MACS2 and SICER. SICER tends to give
 wider  peaks as per its design. It should be noted that at least
-some of the larger inconsistencies (data points on the top right of the plot)
+some of the larger inconsistencies (data points on the top left of the plot)
 are cases were MACS2 identified two separate peaks close to each other which SICER
 merged together. It also useful to note that peak width tends to vary by approximately
 one order of magnitude, from few hundred to few thousand kilo bases.
