@@ -6,6 +6,7 @@
     - [Annotation files](#annotation-files)
 - [Read trimming and alignment](#read-trimming-and-alignment)
 - [Detection of read enrichment \(peak calling\)](#detection-of-read-enrichment-peak-calling)
+    - [Jaccard index between replicates](#jaccard-index-between-replicates)
     - [Consensus regions of read enrichment](#consensus-regions-of-read-enrichment)
 - [Overlap between modifications and genomic regions](#overlap-between-modifications-and-genomic-regions)
     - [Enrichment of Base J and 5hmU in genomic regions](#enrichment-of-base-j-and-5hmu-in-genomic-regions)
@@ -184,6 +185,11 @@ macs2 callpeak --nomodel -t $bam -c $ctrl --keep-dup all -g 30e6 -n $bname
 ```
 
 where `$ctrl` is the appropriate control bam file.
+
+## Jaccard index between replicates
+
+The jaccard index between pairs of peak files was computed using the `jaccard`
+command in bedtools. 
 
 ## Consensus regions of read enrichment
 
