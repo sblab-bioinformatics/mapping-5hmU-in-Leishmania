@@ -188,8 +188,9 @@ where `$ctrl` is the appropriate control bam file.
 
 ## Jaccard index between replicates
 
-The jaccard index between pairs of peak files was computed using the `jaccard`
-command in bedtools. 
+The jaccard index between pairs of peak files was computed using the `jaccard`.
+command in bedtools. The jaccard index computes length of the intersection between 
+two sets of intervals (*i.e.* bed files) and divides it by the union.
 
 ## Consensus regions of read enrichment
 
