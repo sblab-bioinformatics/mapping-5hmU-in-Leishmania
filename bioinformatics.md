@@ -202,7 +202,7 @@ overlapped by 2 or more replicates were retained as *consensus* enrichment regio
 mergePeaks.sh fk050_oxhyd1.oxNPD_peaks.narrowPeak \
               fk051_oxhyd4.oxNPD_peaks.narrowPeak \
               fk054_Chem5.oxNPD_peaks.narrowPeak \
-| awk '$5 > 1' fk_chem_hmu_lmaj.mrg.bed > fk_chem_hmu_lmaj.cns.bed
+| awk '$5 > 1' > fk_chem_hmu_lmaj.cns.bed
 
 ## 5hmU - L. donovani
 mergePeaks.sh fk066_Ldono_chem1_peaks.narrowPeak \
